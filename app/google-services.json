@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "923836429487",
+    "project_id": "saborapp-fb6a3",
+    "storage_bucket": "saborapp-fb6a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923836429487:android:b97f2c3e40aed74ad6105a",
+        "android_client_info": {
+          "package_name": "com.example.saborapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923836429487-lcjqp2dl6h1adrp9mof5cda8i7dfhhr0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.saborapp",
+            "certificate_hash": "e810d145cc4de9c3c00d6869840d1555834b745b"
+          }
+        },
+        {
+          "client_id": "923836429487-mvth1ke8rthongs0vico8jp5b7rsa7gp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq9WtScPSRkMhP2GwUIoaA06Rq5tq2x98"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923836429487-mvth1ke8rthongs0vico8jp5b7rsa7gp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
