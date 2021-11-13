@@ -59,7 +59,7 @@ class SignUpActivity : AppCompatActivity() {
     private fun validateData() {
         // Obtenemos los datos
         email = binding.etEmail.text.toString().trim()
-        password = binding.passwordET.text.toString().trim()
+        password = binding.etPassword.text.toString().trim()
 
         // Validamos los datos
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
@@ -68,7 +68,7 @@ class SignUpActivity : AppCompatActivity() {
         }
         else if(password.length <6){
             // Password length is less than
-            binding.passwordET.error = "La contraseña debe tener almenos 6 caracteres"
+            binding.etPassword.error = "La contraseña debe tener almenos 6 caracteres"
         }
         else{
             // Datos validos

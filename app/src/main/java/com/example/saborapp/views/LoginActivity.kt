@@ -65,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
     private fun validateData() {
         // Obtenemos los datos
         email = binding.etEmail.text.toString().trim()
-        password = binding.passwordET.text.toString().trim()
+        password = binding.etPassword.text.toString().trim()
 
         // Validamos los datos
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
@@ -74,7 +74,7 @@ class LoginActivity : AppCompatActivity() {
         }
         else if(TextUtils.isEmpty(password)){
             // No se ingresa contraseña
-            binding.passwordET.error = "Por favor ingrese una contraseña"
+            binding.etPassword.error = "Por favor ingrese una contraseña"
         }
         else{
             // Datos validos
