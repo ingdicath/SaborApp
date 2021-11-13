@@ -27,14 +27,6 @@
         android:textColor="@color/red1"
         style="@style/TextAppearance.MaterialComponents.Headline6"/>
 
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:text="Inicia Sesión con tu cuenta"
-        android:layout_below="@+id/tvTitleLogin"
-        style="@style/TextAppearance.MaterialComponents.Caption"/>-->
-
     <!-- Email -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/layEmail"

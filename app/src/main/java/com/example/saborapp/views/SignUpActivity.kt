@@ -36,9 +36,10 @@ class SignUpActivity : AppCompatActivity() {
 
         // ActionBar Config
         actionBar = supportActionBar!!
-        actionBar.title = "Sign Up"
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        actionBar.setDisplayShowHomeEnabled(true)
+        //actionBar.title = "Registrate"
+        //actionBar.setDisplayHomeAsUpEnabled(true)
+        //actionBar.setDisplayShowHomeEnabled(true)
+        actionBar.hide()
 
         // Progress Dialog Config
         progressDialog = ProgressDialog(this)
@@ -49,7 +50,7 @@ class SignUpActivity : AppCompatActivity() {
         //init FirebaseAuth
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.signUpBtn.setOnClickListener{
+        binding.btnSignUp.setOnClickListener{
             // Validamos los datos
             validateData()
         }

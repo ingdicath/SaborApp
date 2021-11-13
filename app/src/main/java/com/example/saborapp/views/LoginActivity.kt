@@ -37,7 +37,8 @@ class LoginActivity : AppCompatActivity() {
 
         // Actionbar config
         actionBar = supportActionBar!!
-        actionBar.title = "Login"
+        //actionBar.title = "Iniciar Sesión"
+        actionBar.hide()
 
         // Progress Dialog Config
         progressDialog = ProgressDialog(this)
