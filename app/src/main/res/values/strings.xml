@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">SaborApp</string>
-    <string name="no_account">Not have account? <b>SignUp</b></string>
+    <string name="no_account">¿Aún no tienes cuenta? <b>Registrate</b></string>
 </resources>
