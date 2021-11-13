@@ -1,4 +1,4 @@
-package com.example.saborapp
+package com.example.saborapp.views
 
 // Desarrollo del LOGIN
 
@@ -6,12 +6,10 @@ import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PatternMatcher
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import androidx.appcompat.app.AlertDialog
 import com.example.saborapp.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -43,8 +41,8 @@ class LoginActivity : AppCompatActivity() {
 
         // Progress Dialog Config
         progressDialog = ProgressDialog(this)
-        progressDialog.setTitle("Please Wait")
-        progressDialog.setMessage("Loggin In...")
+        progressDialog.setTitle("Por favor espera")
+        progressDialog.setMessage("Iniciando Sesión...")
         progressDialog.setCanceledOnTouchOutside(false)
 
         //init FirebaseAuth
@@ -53,11 +51,11 @@ class LoginActivity : AppCompatActivity() {
 
         //handle click, open register activity
         binding.noAccountTV.setOnClickListener{
-            startActivity(Intent(this,SignUpActivity::class.java))
+            startActivity(Intent(this, SignUpActivity::class.java))
         }
 
         //handle click, begin login
-        binding.logInBtn.setOnClickListener{
+        binding.btnLogin.setOnClickListener{
             // Antes de logear validamos los datos
             validateData()
         }
@@ -65,13 +63,13 @@ class LoginActivity : AppCompatActivity() {
 
     private fun validateData() {
         // Obtenemos los datos
-        email = binding.emailET.text.toString().trim()
+        email = binding.etEmail.text.toString().trim()
         password = binding.passwordET.text.toString().trim()
 
         // Validamos los datos
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             // Formato invalido de email
-            binding.emailET.error = "Formato invalido de email"
+            binding.etEmail.error = "Formato inválido de email"
         }
         else if(TextUtils.isEmpty(password)){
             // No se ingresa contraseña
@@ -93,7 +91,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this,"Autenticado como $email", Toast.LENGTH_SHORT).show()
 
                 // Iniciamos la actividad de información del perfil
-                startActivity(Intent(this,ProfileActivity::class.java))
+                startActivity(Intent(this, ProfileActivity::class.java))
                 finish()
             }
             .addOnFailureListener{ e->
@@ -107,7 +105,7 @@ class LoginActivity : AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if(firebaseUser != null){
             // Ya ha iniciado sesión
-            startActivity(Intent(this,ProfileActivity::class.java))
+            startActivity(Intent(this, ProfileActivity::class.java))
             finish()
         }
     }

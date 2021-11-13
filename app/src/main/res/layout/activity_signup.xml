@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".SignUpActivity">
+    tools:context=".views.SignUpActivity">
 
     <TextView
-        android:id="@+id/titleLabelTV"
+        android:id="@+id/tvTitleLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -20,19 +20,19 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Create a New Account"
-        android:layout_below="@+id/titleLabelTV"
+        android:layout_below="@+id/tvTitleLogin"
         style="@style/TextAppearance.MaterialComponents.Caption"/>
 
     <!-- Email -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/emailTitle"
-        android:layout_above="@id/passwordTitle"
+        android:id="@+id/layEmail"
+        android:layout_above="@id/layPassword"
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/emailET"
+            android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
@@ -43,7 +43,7 @@
 
     <!-- Password -->
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/passwordTitle"
+        android:id="@+id/layPassword"
         app:passwordToggleEnabled="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign Up"
-        android:layout_below="@id/passwordTitle"
+        android:layout_below="@id/layPassword"
         android:layout_marginTop="10dp"/>
 
 </RelativeLayout>

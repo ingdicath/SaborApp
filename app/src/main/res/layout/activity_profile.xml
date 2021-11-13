@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="20dp"
     android:gravity="center"
-    tools:context=".ProfileActivity">
+    tools:context=".views.ProfileActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,6 +20,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"/>
+
+    <Button
+        android:id="@+id/btnReadRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ver Recetas"
+
+        android:backgroundTint="@color/red1"/>
 
     <Button
         android:id="@+id/logoutBtn"
