@@ -92,7 +92,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this,"Autenticado como $email", Toast.LENGTH_SHORT).show()
 
                 // Iniciamos la actividad de información del perfil
-                startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
             .addOnFailureListener{ e->
@@ -106,7 +106,7 @@ class LoginActivity : AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if(firebaseUser != null){
             // Ya ha iniciado sesión
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }

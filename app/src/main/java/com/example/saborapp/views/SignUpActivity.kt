@@ -92,7 +92,7 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(this,"Cuenta creada correctamente con email $email", Toast.LENGTH_SHORT).show()
 
                 //Inciar Actividad
-                startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
             .addOnFailureListener{ e->

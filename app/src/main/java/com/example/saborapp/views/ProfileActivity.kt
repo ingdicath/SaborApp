@@ -43,11 +43,6 @@ class ProfileActivity : AppCompatActivity() {
             checkUser()
         }
 
-        // Botón ver recetas
-        findViewById<Button>(R.id.btnReadRecipe).setOnClickListener{
-            startActivity(Intent(this, RecipeActivity::class.java))
-        }
-
     }
 
     private fun checkUser() {
