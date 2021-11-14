@@ -1,13 +1,14 @@
-package com.example.saborapp
+package com.example.saborapp.views
 
 // Desarrollo del Profile
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.ActionBar
+import com.example.saborapp.R
 import com.example.saborapp.databinding.ActivityProfileBinding
-import com.example.saborapp.databinding.ActivitySignupBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class ProfileActivity : AppCompatActivity() {
@@ -53,7 +54,7 @@ class ProfileActivity : AppCompatActivity() {
             binding.emailTV.text = email
         }else{
             // Usuario no Logeado
-            startActivity(Intent(this,LoginActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }
     }

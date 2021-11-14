@@ -1,4 +1,4 @@
-package com.example.saborapp
+package com.example.saborapp.views
 
 // Desarrollo del SignUp
 
@@ -9,8 +9,6 @@ import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import androidx.appcompat.app.AlertDialog
-import com.example.saborapp.databinding.ActivityLoginBinding
 import com.example.saborapp.databinding.ActivitySignupBinding
 import com.google.firebase.auth.FirebaseAuth
 
@@ -38,9 +36,10 @@ class SignUpActivity : AppCompatActivity() {
 
         // ActionBar Config
         actionBar = supportActionBar!!
-        actionBar.title = "Sign Up"
-        actionBar.setDisplayHomeAsUpEnabled(true)
-        actionBar.setDisplayShowHomeEnabled(true)
+        //actionBar.title = "Registrate"
+        //actionBar.setDisplayHomeAsUpEnabled(true)
+        //actionBar.setDisplayShowHomeEnabled(true)
+        actionBar.hide()
 
         // Progress Dialog Config
         progressDialog = ProgressDialog(this)
@@ -51,7 +50,7 @@ class SignUpActivity : AppCompatActivity() {
         //init FirebaseAuth
         firebaseAuth = FirebaseAuth.getInstance()
 
-        binding.signUpBtn.setOnClickListener{
+        binding.btnSignUp.setOnClickListener{
             // Validamos los datos
             validateData()
         }
@@ -59,17 +58,17 @@ class SignUpActivity : AppCompatActivity() {
 
     private fun validateData() {
         // Obtenemos los datos
-        email = binding.emailET.text.toString().trim()
-        password = binding.passwordET.text.toString().trim()
+        email = binding.etEmail.text.toString().trim()
+        password = binding.etPassword.text.toString().trim()
 
         // Validamos los datos
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             // Datos invalidos
-            binding.emailET.error = "Formato de email invalido"
+            binding.etEmail.error = "Formato de email invalido"
         }
         else if(password.length <6){
             // Password length is less than
-            binding.passwordET.error = "La contraseña debe tener almenos 6 caracteres"
+            binding.etPassword.error = "La contraseña debe tener almenos 6 caracteres"
         }
         else{
             // Datos validos
@@ -93,7 +92,7 @@ class SignUpActivity : AppCompatActivity() {
                 Toast.makeText(this,"Cuenta creada correctamente con email $email", Toast.LENGTH_SHORT).show()
 
                 //Inciar Actividad
-                startActivity(Intent(this,ProfileActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
             .addOnFailureListener{ e->
