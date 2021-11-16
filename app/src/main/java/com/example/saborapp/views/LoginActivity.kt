@@ -65,7 +65,7 @@ class LoginActivity : AppCompatActivity() {
     private fun validateData() {
         // Obtenemos los datos
         email = binding.etEmail.text.toString().trim()
-        password = binding.passwordET.text.toString().trim()
+        password = binding.etPassword.text.toString().trim()
 
         // Validamos los datos
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
@@ -74,7 +74,7 @@ class LoginActivity : AppCompatActivity() {
         }
         else if(TextUtils.isEmpty(password)){
             // No se ingresa contraseña
-            binding.passwordET.error = "Por favor ingrese una contraseña"
+            binding.etPassword.error = "Por favor ingrese una contraseña"
         }
         else{
             // Datos validos
@@ -92,7 +92,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this,"Autenticado como $email", Toast.LENGTH_SHORT).show()
 
                 // Iniciamos la actividad de información del perfil
-                startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
             .addOnFailureListener{ e->
@@ -106,7 +106,7 @@ class LoginActivity : AppCompatActivity() {
         val firebaseUser = firebaseAuth.currentUser
         if(firebaseUser != null){
             // Ya ha iniciado sesión
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }

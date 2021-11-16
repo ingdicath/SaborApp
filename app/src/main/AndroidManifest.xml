@@ -10,7 +10,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.SaborApp">
-        <activity android:name=".views.RecipeActivity"></activity>
+        <activity android:name=".views.MainActivity"></activity>
+        <activity android:name=".views.RecipeActivity" />
         <activity android:name=".views.ProfileActivity" />
         <activity android:name=".views.SignUpActivity" />
         <activity android:name=".views.LoginActivity">
