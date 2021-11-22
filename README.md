@@ -4,6 +4,8 @@
 # README 2 #
 >>>>>>> 362ccdfa630dc603b08f11e311f34c938c869dbc
 
+This is a test
+
 This README would normally document whatever steps are necessary to get your application up and running.
 
 ### What is this repository for? ###
