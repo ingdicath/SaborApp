@@ -1,6 +1,8 @@
 package com.example.saborapp.views
 
+import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.ActionBar
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
@@ -8,20 +10,42 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.saborapp.R
+import com.example.saborapp.databinding.ActivityLoginBinding
+import com.example.saborapp.databinding.ActivityMainBinding
+import com.example.saborapp.databinding.ActivityProfileBinding
 
 class MainActivity : AppCompatActivity() {
 
+    //ViewBinding
+    private lateinit var binding: ActivityMainBinding
+
+    // ActionBar
+    private lateinit var actionBar: ActionBar
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val navView: BottomNavigationView = findViewById(R.id.nav_view)
 
-        val navController = findNavController(R.id.nav_host_fragment)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-        val appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.navigation_recipe, R.id.navigation_profile, R.id.navigation_about))
-        setupActionBarWithNavController(navController, appBarConfiguration)
-        navView.setupWithNavController(navController)
+        //View Binding
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        // Actionbar config
+        actionBar = supportActionBar!!
+        //actionBar.title = "Iniciar Sesión"
+        actionBar.hide()
+
+        // Botones de Navegacion
+        binding.btnRecipe.setOnClickListener{
+            startActivity(Intent(this,RecipeActivity::class.java))
+        }
+
+        binding.btnProfile.setOnClickListener{
+            startActivity(Intent(this,ProfileActivity::class.java))
+        }
+
+        binding.btnAboutUs.setOnClickListener{
+            startActivity(Intent(this,AboutActivity::class.java))
+        }
+
     }
 }

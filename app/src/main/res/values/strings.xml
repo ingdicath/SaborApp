@@ -1,11 +1,10 @@
 <resources>
     <string name="app_name">SaborApp</string>
     <string name="no_account">¿Aún no tienes cuenta? <b>Registrate</b></string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_recipe">Recipe Fragment</string>
-    <string name="title_profile">Profile Fragment</string>
-    <string name="title_about">Sobre SaborApp</string>
+
+    <string name="title_recipe">Mis Recetas</string>
+    <string name="title_profile">Mi Perfil</string>
+    <string name="title_about">Acerca De</string>
 
     <!-- Fragment About us -->
     <string name="img_about">Background</string>
