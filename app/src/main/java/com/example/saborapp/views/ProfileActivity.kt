@@ -31,14 +31,14 @@ class ProfileActivity : AppCompatActivity() {
 
         // Configure ActionBar
         actionBar = supportActionBar!!
-        actionBar.title = "Perfil"
+        actionBar.hide()
 
         // init Firebase Auth
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
 
         //handle click
-        binding.logoutBtn.setOnClickListener{
+        binding.btnLogOut.setOnClickListener{
             firebaseAuth.signOut()
             checkUser()
         }

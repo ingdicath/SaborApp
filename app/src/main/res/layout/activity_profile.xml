@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="You're logged-In as"
+        android:text="Bienvenido"
         style="@style/TextAppearance.MaterialComponents.Caption"/>
 
     <TextView
@@ -23,10 +23,16 @@
 
 
     <Button
-        android:id="@+id/logoutBtn"
+        android:id="@+id/btnLogOut"
         android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="logout"/>
+        android:text="Cerrar Sesión"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="@color/white"/>
 
 </LinearLayout>
