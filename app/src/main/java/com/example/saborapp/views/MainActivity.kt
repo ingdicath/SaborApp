@@ -13,6 +13,7 @@ import com.example.saborapp.R
 import com.example.saborapp.databinding.ActivityLoginBinding
 import com.example.saborapp.databinding.ActivityMainBinding
 import com.example.saborapp.databinding.ActivityProfileBinding
+import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +24,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var actionBar: ActionBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        Thread.sleep(2000)
+        setTheme(R.style.Theme_SaborApp)
         super.onCreate(savedInstanceState)
 
         //View Binding
