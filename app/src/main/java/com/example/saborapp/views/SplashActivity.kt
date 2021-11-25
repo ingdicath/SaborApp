@@ -41,7 +41,7 @@ class SplashActivity : AppCompatActivity() {
         title_txt.animation = bottomAnimation
 
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish()
         }, SPLASH_SCREEN.toLong())
