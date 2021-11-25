@@ -10,8 +10,4 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="SplashTheme" parent= "Theme.SaborApp">
-        <item name="android:windowBackground">@drawable/splashscreen</item>
-    </style>
-
 </resources>
