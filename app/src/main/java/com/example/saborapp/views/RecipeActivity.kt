@@ -34,7 +34,9 @@ class RecipeActivity : AppCompatActivity() {
 
         // Actionbar config
         actionBar = supportActionBar!!
-        actionBar.hide()
+        //actionBar.hide()
+        actionBar.title = "Mis recetas"
+
 
 
         // TODO Investigar CRUD FIREBASE
@@ -42,13 +44,8 @@ class RecipeActivity : AppCompatActivity() {
         //var recipesRef = dbRef.child(uid).child("recipes")
         // val recipe = RecipeModel("2","Ramen","1","2min","Fideos","Cocinarlo")
 
-
-
-
-
-
-
     }
+
 
 
 
