@@ -20,5 +20,8 @@
     <color name="gray2">#FFAFADAD</color>
     <color name="gray3">#FFE4E4E4</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FF5722</color>
+    <color name="black">#000000</color>
 
-</resources>
+
+    </resources>
