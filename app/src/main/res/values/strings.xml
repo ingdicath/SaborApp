@@ -8,19 +8,18 @@
 
     <!-- Fragment About us -->
     <string name="img_about">Background</string>
-    <string name="tv_about_description" formatted="true">"\nSomos el App que te da recetas deliciosas, nutritivas y consistentes. Desde smoothies hasta sopas, postres y antojos típicos, SaborApp te guiara paso a paso hasta un perfecto resultado cada vez. En nuestra última actualización, incluimos las sugerencias hechas por nuestros usuarios.\n¡Déjate sorprender!\n\n"</string>
+    <string name="tv_about_description" formatted="true">"Somos el App que te da recetas deliciosas, nutritivas y consistentes. Desde smoothies hasta sopas, postres y antojos típicos, SaborApp te guiará paso a paso hasta un perfecto resultado cada vez. En nuestra última actualización, incluimos las sugerencias hechas por nuestros usuarios.\n¡Déjate sorprender!\n"</string>
     <string name="tv_developers_tittle">Desarrolladores</string>
     <string name="tv_developers_description">
             Lizeth Paola Delgadillo\n
             Diana Salamanca\n
-            Gloria Rodríguez\n
             Adriana Collazos\n
             Jorge Vargas\n\n</string>
     <string name="tv_address_tittle">¿Dónde estamos ubicados?</string>
     <string name="tv_address_description">
             Local 11-4\n
             Centro Comercial SantaFe\n
-            Bogota,Colombia
+            Bogotá, Colombia
     </string>
 
 
