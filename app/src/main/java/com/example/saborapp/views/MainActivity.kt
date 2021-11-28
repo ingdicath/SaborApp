@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var actionBar: ActionBar
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Thread.sleep(2000)
+        Thread.sleep(1500)
         setTheme(R.style.Theme_SaborApp)
         super.onCreate(savedInstanceState)
 

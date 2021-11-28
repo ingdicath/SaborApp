@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:alpha="0.9"
-        android:background="@drawable/aboutus_back"
+        android:background="@mipmap/aboutus_back"
         android:contentDescription="@string/img_about"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

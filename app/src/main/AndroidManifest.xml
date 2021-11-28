@@ -11,6 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SaborApp">
         <activity
+            android:name=".views.EditRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".views.AddRecipeActivity"
+            android:exported="false" />
+        <activity
             android:name=".views.SplashActivity"
             android:exported="true">
             <intent-filter>

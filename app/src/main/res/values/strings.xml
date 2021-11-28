@@ -6,7 +6,7 @@
     <string name="title_profile">Mi Perfil</string>
     <string name="title_about">Acerca De</string>
 
-    <!-- Fragment About us -->
+    <!-- About us activity -->
     <string name="img_about">Background</string>
     <string name="tv_about_description" formatted="true">"Somos el App que te da recetas deliciosas, nutritivas y consistentes. Desde smoothies hasta sopas, postres y antojos típicos, SaborApp te guiará paso a paso hasta un perfecto resultado cada vez. En nuestra última actualización, incluimos las sugerencias hechas por nuestros usuarios.\n¡Déjate sorprender!\n"</string>
     <string name="tv_developers_tittle">Desarrolladores</string>
@@ -21,6 +21,21 @@
             Centro Comercial SantaFe\n
             Bogotá, Colombia
     </string>
+
+    <!-- Add recipe activity -->
+    <string name="add_recipe_tittle">¡Agrega una receta!</string>
+    <string name="btn_save">Save</string>
+    <string name="hint_recipe">Nombre de la receta</string>
+    <string name="hint_portions">Número de porciones</string>
+    <string name="hint_cooking">Tiempo de preparación</string>
+    <string name="hint_ingredients">Ingredientes</string>
+    <string name="hint_instructions">Instrucciones</string>
+    <string name="add_image_here">Coloque la imagen de su receta</string>
+
+    <!-- Edit recipe activity -->
+
+    <string name="edit_recipe_tittle">¡Edita la receta!</string>
+    <string name="btn_update">Actualizar</string>
 
 
 </resources>

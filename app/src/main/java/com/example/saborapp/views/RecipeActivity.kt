@@ -1,5 +1,6 @@
 package com.example.saborapp.views
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -37,7 +38,10 @@ class RecipeActivity : AppCompatActivity() {
         //actionBar.hide()
         actionBar.title = "Mis recetas"
 
-
+        // Invocar la pantalla Agregar receta
+        binding.floatingButtonRecipe.setOnClickListener{
+            startActivity(Intent(this,AddRecipeActivity::class.java))
+        }
 
         // TODO Investigar CRUD FIREBASE
         //var uid: String = "uid1"
