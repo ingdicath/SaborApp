@@ -9,125 +9,130 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@mipmap/aboutus_back"
         android:alpha="0.9"
+        android:background="@mipmap/aboutus_back"
         android:orientation="vertical"
+        tools:ignore="UselessParent"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="UselessParent">
+        tools:layout_editor_absoluteY="1dp">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="25dp"
-            android:background="@drawable/border_shadow"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/tvEditRecipe"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/lato_black"
-                android:text="@string/edit_recipe_tittle"
-                android:textAlignment="center"
-                android:textColor="@color/red1"
-                android:textSize="20sp" />
+                android:layout_height="match_parent"
+                android:layout_margin="25dp"
+                android:background="@drawable/border_shadow"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/btnAddImageRecipe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_vertical|center_horizontal"
-                app:srcCompat="@drawable/ic_add_photo_recipe"
-                android:contentDescription="@string/add_image_here" />
+                <TextView
+                    android:id="@+id/tvEditRecipe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/lato_black"
+                    android:text="@string/edit_recipe_tittle"
+                    android:textAlignment="center"
+                    android:textColor="@color/red1"
+                    android:textSize="20sp" />
 
-            <EditText
-                android:id="@+id/etRecipeName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="15dp"
-                android:ems="10"
-                android:fontFamily="@font/lato_regular"
-                android:hint="@string/hint_recipe"
-                android:inputType="textPersonName"
-                android:textSize="14sp"
-                android:autofillHints="recipeName" />
+                <ImageButton
+                    android:id="@+id/btnAddImageRecipe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/add_image_here"
+                    app:srcCompat="@drawable/ic_add_photo_recipe" />
 
-            <EditText
-                android:id="@+id/etNumPortions"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="15dp"
-                android:ems="10"
-                android:fontFamily="@font/lato_regular"
-                android:hint="@string/hint_portions"
-                android:inputType="number"
-                android:textSize="14sp"
-                android:autofillHints="portions" />
+                <EditText
+                    android:id="@+id/etRecipeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:autofillHints="recipeName"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="@string/hint_recipe"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
 
-            <EditText
-                android:id="@+id/etCookingTime"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="15dp"
-                android:ems="10"
-                android:fontFamily="@font/lato_regular"
-                android:hint="@string/hint_cooking"
-                android:inputType="textPersonName"
-                android:textSize="14sp"
-                android:autofillHints="cooking" />
+                <EditText
+                    android:id="@+id/etNumPortions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:autofillHints="portions"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="@string/hint_portions"
+                    android:inputType="number"
+                    android:textSize="14sp" />
 
-            <EditText
-                android:id="@+id/etIngredients"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="15dp"
-                android:ems="10"
-                android:fontFamily="@font/lato_regular"
-                android:gravity="start|top"
-                android:hint="@string/hint_ingredients"
-                android:inputType="textMultiLine"
-                android:textSize="14sp"
-                android:autofillHints="ingredients" />
+                <EditText
+                    android:id="@+id/etCookingTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:autofillHints="cooking"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="@string/hint_cooking"
+                    android:inputType="textPersonName"
+                    android:textSize="14sp" />
 
-            <EditText
-                android:id="@+id/etInstructions"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="15dp"
-                android:ems="10"
-                android:fontFamily="@font/lato_regular"
-                android:gravity="start|top"
-                android:hint="@string/hint_instructions"
-                android:inputType="textMultiLine"
-                android:textSize="14sp"
-                android:autofillHints="instructions" />
+                <EditText
+                    android:id="@+id/etIngredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:autofillHints="ingredients"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="start|top"
+                    android:hint="@string/hint_ingredients"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp" />
 
-            <Button
-                android:id="@+id/btnUpdate"
-                style="@style/TextAppearance.MaterialComponents.Body1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:paddingStart="40dp"
-                android:paddingTop="15dp"
-                android:paddingEnd="40dp"
-                android:paddingBottom="15dp"
-                android:text="@string/btn_update"
-                android:textColor="@color/white" />
-        </LinearLayout>
+                <EditText
+                    android:id="@+id/etInstructions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:autofillHints="instructions"
+                    android:ems="10"
+                    android:fontFamily="@font/lato_regular"
+                    android:gravity="start|top"
+                    android:hint="@string/hint_instructions"
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingStart="40dp"
+                    android:paddingTop="15dp"
+                    android:paddingEnd="40dp"
+                    android:paddingBottom="15dp"
+                    android:text="@string/btn_update"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </ScrollView>
     </RelativeLayout>
 </RelativeLayout>

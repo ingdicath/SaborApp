@@ -1,6 +1,8 @@
 package com.example.saborapp.views
 
 import android.content.Intent
+import android.media.Image
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -14,6 +16,9 @@ class AddRecipeActivity : AppCompatActivity() {
 
 	//ViewBinding
 	private lateinit var binding: ActivityAddRecipeBinding
+
+//	// Image - check this
+//	private lateinit var ImageUri: Uri
 
 	//Firebase
 	private val dbRef = Firebase.database.reference
@@ -59,5 +64,26 @@ class AddRecipeActivity : AppCompatActivity() {
 					}
 			}
 		}
+
+		binding.btnAddImageRecipe.setOnClickListener {
+			selectImage()
+		}
+
 	}
+
+	// selected image from cellphone - check this
+	private fun selectImage() {
+		val intent = Intent()
+		intent.type = "images/*"
+		intent.action = Intent.ACTION_GET_CONTENT
+		startActivityForResult(intent, 100)
+	}
+
+//	override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+//		super.onActivityResult(requestCode, resultCode, data)
+//		if (requestCode == 100 && resultCode == RESULT_OK) {
+//			ImageUri = data?.data!!
+//			binding.firebaseImage.setImageURI(ImageUri)
+//		}
+//	}
 }
