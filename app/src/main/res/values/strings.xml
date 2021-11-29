@@ -33,9 +33,12 @@
     <string name="add_image_here">Coloque la imagen de su receta</string>
 
     <!-- Edit recipe activity -->
-
     <string name="edit_recipe_tittle">¡Edita la receta!</string>
     <string name="btn_update">Actualizar</string>
+
+    <!-- View single recipe activity -->
+    <string name="edit_recipe">Edit</string>
+    <string name="delete_recipe">Delete</string>
 
 
 </resources>

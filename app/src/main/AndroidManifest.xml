@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SaborApp">
         <activity
+            android:name=".views.ViewSingleRecipeActivity"
+            android:exported="false" />
+        <activity
             android:name=".views.EditRecipeActivity"
             android:exported="false" />
         <activity
