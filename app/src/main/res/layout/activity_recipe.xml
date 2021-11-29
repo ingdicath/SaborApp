@@ -8,7 +8,6 @@
     android:padding="20dp"
     tools:context=".views.RecipeActivity">
 
-
    <ScrollView
        android:layout_width="wrap_content"
        android:layout_height="wrap_content">
@@ -17,6 +16,34 @@
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:orientation="vertical">
+
+           <TextView
+               android:id="@+id/tvRecipeName"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+           <TextView
+               android:id="@+id/tvRecipeTime"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"/>
+
+           <ImageView
+               android:id="@+id/imageView5"
+               android:layout_width="match_parent"
+               android:layout_height="184dp"
+               app:srcCompat="@mipmap/lasagnna" />
+
+           <TextView
+               android:id="@+id/editTextTextPersonName3"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:ems="18"
+               android:textSize="18dp"
+               android:inputType="textPersonName"
+               android:text="Lasaña"
+               android:textColor="@color/black"
+               android:fontFamily="@font/lato_regular"
+               />
 
            <ImageView
                android:id="@+id/imageView2"

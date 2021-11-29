@@ -3,17 +3,9 @@ package com.example.saborapp.views
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
 import com.example.saborapp.R
-import com.example.saborapp.databinding.ActivityLoginBinding
 import com.example.saborapp.databinding.ActivityMainBinding
-import com.example.saborapp.databinding.ActivityProfileBinding
-import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
 
