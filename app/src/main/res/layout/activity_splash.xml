@@ -15,7 +15,7 @@
         android:id="@+id/hr_image"
         android:layout_marginTop="100dp"
         android:layout_gravity="center"
-        android:src="@mipmap/saborappsplash"
+        android:src="@mipmap/saborapp"
         />
 
     <TextView
