@@ -27,12 +27,11 @@ class AddRecipeActivity : AppCompatActivity() {
 		//View Binding
 		binding = ActivityAddRecipeBinding.inflate(layoutInflater)
 		setContentView(binding.root)
-		//setContentView(R.layout.activity_edit_recipe)
 
 		// init Firebase Auth
 		firebaseAuth = FirebaseAuth.getInstance()
 
-		binding.btnUpdate.setOnClickListener{
+		binding.btnSave.setOnClickListener {
 
 			//User Data
 			val uid = firebaseAuth.currentUser?.uid
@@ -50,16 +49,15 @@ class AddRecipeActivity : AppCompatActivity() {
 			if (uid != null) {
 				dbRef.child(uid).child("recipes").setValue(recipeData)
 					.addOnSuccessListener {
-						Toast.makeText(this,"Receta guardada correctamente",Toast.LENGTH_SHORT).show()
+						Toast.makeText(this, "Receta guardada correctamente", Toast.LENGTH_SHORT)
+							.show()
 						startActivity(Intent(this, RecipeActivity::class.java))
 						finish()
 					}
-					.addOnFailureListener{
+					.addOnFailureListener {
 						it.printStackTrace()
 					}
 			}
 		}
-
-
 	}
 }
