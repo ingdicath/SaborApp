@@ -1,63 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/container"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="20dp">
+    android:background="@color/purple"
+    tools:context=".MainActivity">
 
-    <TextView
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/title_activity_main"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/subtitle_activity_main"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/text_light"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recipeRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        tools:context=".MainActivity"
+        tools:listitem="@layout/recipe_content" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/newFloatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/btnRecipe"
-        android:text="Menú"
-        android:layout_marginBottom="20dp"
-        style="@style/TextAppearance.MaterialComponents.Headline5"
-        android:textColor="@color/gray2"/>
-
-    <Button
-        android:id="@+id/btnRecipe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_recipe"
-        android:layout_above="@id/btnProfile"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-        android:textColor="@color/white"
-        />
-
-    <Button
-        android:id="@+id/btnProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_profile"
-        android:layout_centerInParent="true"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-        android:textColor="@color/white"/>
-
-    <Button
-        android:id="@+id/btnAboutUs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_about"
-        android:layout_below="@+id/btnProfile"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-        android:textColor="@color/white"/>
-
-</RelativeLayout>
+        android:layout_margin="20dp"
+        android:contentDescription="@string/all"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/recipeRecyclerView"
+        app:srcCompat="@drawable/ic_plus"
+        android:backgroundTint="@color/orange2"
+        tools:ignore="VectorDrawableCompat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

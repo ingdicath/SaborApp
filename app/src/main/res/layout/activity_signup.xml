@@ -1,86 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/purple"
     android:padding="20dp"
-    tools:context=".views.SignUpActivity">
+    tools:context=".SignUpActivity">
 
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_above="@id/tvTitleLogin"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/saborapp"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:id="@+id/tvTitleLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/layEmail"
-        android:layout_marginBottom="20dp"
-        android:text="¡Registrate!"
-        android:textColor="@color/red1"
-        style="@style/TextAppearance.MaterialComponents.Headline6"/>
-
-    <!-- Email -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layEmail"
-        android:layout_marginBottom="10dp"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/etEmail"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Correo Electrónico"
-            android:inputType="textEmailAddress"
-            android:textColor="@color/gray1"
-            android:backgroundTint="@color/gray3"/>
+            android:layout_height="match_parent"
+            android:padding="20dp">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/tvTitleLogin"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/saborapp" />
+
+            <TextView
+                android:id="@+id/tvTitleLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/etEmail"
+                android:layout_marginBottom="20dp"
+                android:text="¡Registrate!"
+                android:textColor="@color/red1"
+                style="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+            <!-- Email -->
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Correo Electrónico"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_dark"/>
+
+            <!-- Password -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_below="@id/etEmail"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="Contraseña"
+                android:textColor="@color/text_dark" />
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:text="Registrate"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:layout_below="@id/etPassword"
+                android:layout_marginTop="40dp"
+                android:backgroundTint="@color/red1"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
 
 
-    <!-- Password -->
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layPassword"
-        app:passwordToggleEnabled="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/layEmail"
-        android:layout_marginTop="10dp">
+    </androidx.cardview.widget.CardView>
 
-        <EditText
-            android:id="@+id/etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="Contraseña"
-            android:textColor="@color/gray1"
-            android:backgroundTint="@color/gray3"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <!-- SignUp Button -->
-    <Button
-        android:id="@+id/btnSignUp"
-        android:layout_width="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
-        android:text="Registrarse"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:layout_below="@id/layPassword"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@color/red1"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-        android:textColor="@color/white"/>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

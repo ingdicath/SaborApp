@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "SaborApp"
+rootProject.name = "FirebaseKotlinCRUD"

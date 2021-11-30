@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:padding="20dp"
     android:gravity="center"
-    tools:context=".views.ProfileActivity">
+    tools:context=".ProfileActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         style="@style/TextAppearance.MaterialComponents.Caption"/>
 
     <TextView
-        android:id="@+id/emailTV"
+        android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"/>
@@ -32,6 +32,7 @@
         android:paddingEnd="40dp"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
+        android:backgroundTint="@color/red1"
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:textColor="@color/white"/>
 

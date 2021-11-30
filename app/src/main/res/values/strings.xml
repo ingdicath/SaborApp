@@ -1,6 +1,19 @@
 <resources>
     <string name="app_name">SaborApp</string>
+    <string name="all">TODO</string>
+    <string name="name">LOREM VII remake</string>
+    <string name="date">30 de noviembre de 2021</string>
+    <string name="title_activity_main">SaborApp</string>
+    <string name="subtitle_activity_main">2021</string>
+    <string name="title_activity_add">Nueva Receta</string>
+    <string name="title_activity_edit">Datos de la receta</string>
+    <string name="name_form">Nombre</string>
+    <string name="date_form">Fecha</string>
+    <string name="url_form">Url imagen</string>
+    <string name="description_form">Descripción</string>
+    <string name="save">Guardar</string>
     <string name="no_account">¿Aún no tienes cuenta? <b>Registrate</b></string>
+    <string name="description">Lorem es una franquicia de medios creada por Hironobu Sakaguchi y desarrollada por Square Enix. La franquicia se centra en una serie de fantasía y ciencia ficción de videojuegos RPG.</string>
 
     <string name="title_recipe">Mis Recetas</string>
     <string name="title_profile">Mi Perfil</string>
@@ -21,24 +34,5 @@
             Centro Comercial SantaFe\n
             Bogotá, Colombia
     </string>
-
-    <!-- Add recipe activity -->
-    <string name="add_recipe_tittle">¡Agrega una receta!</string>
-    <string name="btn_save">Save</string>
-    <string name="hint_recipe">Nombre de la receta</string>
-    <string name="hint_portions">Número de porciones</string>
-    <string name="hint_cooking">Tiempo de preparación</string>
-    <string name="hint_ingredients">Ingredientes</string>
-    <string name="hint_instructions">Instrucciones</string>
-    <string name="add_image_here">Coloque la imagen de su receta</string>
-
-    <!-- Edit recipe activity -->
-    <string name="edit_recipe_tittle">¡Edita la receta!</string>
-    <string name="btn_update">Actualizar</string>
-
-    <!-- View single recipe activity -->
-    <string name="edit_recipe">Edit</string>
-    <string name="delete_recipe">Delete</string>
-
 
 </resources>
