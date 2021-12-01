@@ -1,67 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="20dp">
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_above="@+id/btnRecipe"
+        android:layout_above="@id/frRecipe"
         android:text="Menú"
+        android:textSize="32dp"
+        android:fontFamily="@font/lobster_regular"
         android:layout_marginBottom="20dp"
-        style="@style/TextAppearance.MaterialComponents.Headline5"
-        android:textColor="@color/gray2"/>
+        android:textColor="@color/red1"/>
 
-    <Button
-        android:id="@+id/btnRecipe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_recipe"
-        android:layout_above="@id/btnProfile"
+    <FrameLayout
+        android:id="@+id/frRecipe"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/frProfile"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:backgroundTint="@color/red1"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-        android:textColor="@color/white"
-        />
+        android:layout_marginBottom="20dp">
 
-    <Button
-        android:id="@+id/btnProfile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_profile"
-        android:layout_centerInParent="true"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:backgroundTint="@color/red1"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-        android:textColor="@color/white"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp">
 
-    <Button
-        android:id="@+id/btnAboutUs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/title_about"
-        android:layout_below="@+id/btnProfile"
+
+            <ImageButton
+                android:id="@+id/btnRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="1"
+                android:scaleType="centerCrop"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:src="@drawable/burger"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#80343434">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mis recetas"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"/>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp">
+
+
+            <ImageButton
+                android:id="@+id/btnProfile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="1"
+                android:scaleType="centerCrop"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:src="@drawable/burger"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#80343434">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Mi Perfil"
+                    android:fontFamily="@font/lato_regular"
+                    android:textColor="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frAboutUs"
+        android:layout_below="@+id/frProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:backgroundTint="@color/red1"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-        android:textColor="@color/white"/>
+        android:layout_marginTop="20dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="10dp">
+
+
+            <ImageButton
+                android:id="@+id/btnAboutUs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="1"
+                android:scaleType="centerCrop"
+                android:scaleX="1.2"
+                android:scaleY="1.2"
+                android:src="@drawable/burger"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#80343434">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Acerca De"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"/>
+
+            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+
 
 
 </RelativeLayout>
