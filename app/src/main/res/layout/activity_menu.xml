@@ -40,19 +40,19 @@
                 android:layout_height="match_parent"
                 android:alpha="1"
                 android:scaleType="centerCrop"
-                android:scaleX="1.2"
-                android:scaleY="1.2"
-                android:src="@drawable/burger"/>
+                android:scaleX="1"
+                android:scaleY="1"
+                android:src="@drawable/mis_recetas"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#80343434">
+                android:backgroundTint="#00343434">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mis recetas"
+                    android:text=""
                     android:fontFamily="@font/lato_regular"
                     android:layout_gravity="center"
                     android:textColor="@color/white"/>
@@ -79,14 +79,14 @@
                 android:layout_height="match_parent"
                 android:alpha="1"
                 android:scaleType="centerCrop"
-                android:scaleX="1.2"
-                android:scaleY="1.2"
-                android:src="@drawable/burger"/>
+                android:scaleX="1"
+                android:scaleY="1"
+                android:src="@drawable/mi_perfil"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#80343434">
+                android:backgroundTint="#00343434">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -120,19 +120,19 @@
                 android:layout_height="match_parent"
                 android:alpha="1"
                 android:scaleType="centerCrop"
-                android:scaleX="1.2"
-                android:scaleY="1.2"
-                android:src="@drawable/burger"/>
+                android:scaleX="1"
+                android:scaleY="1"
+                android:src="@drawable/acerca_de"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#80343434">
+                android:backgroundTint="#00343434">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Acerca De"
+                    android:text=""
                     android:fontFamily="@font/lato_regular"
                     android:layout_gravity="center"
                     android:textColor="@color/white"/>
