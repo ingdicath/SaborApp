@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple"
+    android:background="@color/gray1"
     tools:context=".RecipeDetail">
 
     <ImageView
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         app:cardMaxElevation="0dp"
         app:cardCornerRadius="16dp"
-        app:cardBackgroundColor="@color/purple"
+        app:cardBackgroundColor="@color/gray1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -58,6 +58,7 @@
                 android:layout_marginEnd="180dp"
                 android:layout_marginRight="180dp"
                 android:layout_marginBottom="32dp"
+                android:fontFamily="@font/lato_regular"
                 android:text="@string/name"
                 android:textColor="@color/white"
                 android:textSize="24sp" />
@@ -72,7 +73,8 @@
                 android:layout_marginEnd="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="40dp"
-                android:textColor="@color/text_light"
+                android:fontFamily="@font/lato_regular"
+                android:textColor="@color/white"
                 android:text="@string/description" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

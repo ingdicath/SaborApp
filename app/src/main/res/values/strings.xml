@@ -8,7 +8,7 @@
     <string name="title_activity_add">Nueva Receta</string>
     <string name="title_activity_edit">Datos de la receta</string>
     <string name="name_form">Nombre</string>
-    <string name="date_form">Fecha</string>
+    <string name="portions_form">Porciones</string>
     <string name="url_form">Url imagen</string>
     <string name="description_form">Descripción</string>
     <string name="save">Guardar</string>

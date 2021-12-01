@@ -9,7 +9,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="320dp"
-        android:background="@color/purple"
+        android:background="@color/gray1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,6 +22,7 @@
         android:text="@string/title_activity_edit"
         android:textColor="@color/white"
         android:textSize="32sp"
+        android:fontFamily="@font/lato_regular"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="16dp" />
@@ -55,6 +56,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="8dp"
+                android:fontFamily="@font/lato_regular"
                 android:text="@string/name_form"
                 android:textColor="@color/text_dark"
                 android:textSize="18sp" />
@@ -74,6 +76,7 @@
                 android:layout_marginRight="16dp"
                 android:autofillHints="@string/name_form"
                 android:background="@drawable/ic_field"
+                android:fontFamily="@font/lato_regular"
                 android:ems="80"
                 android:hint="@string/name_form"
                 android:inputType="textAutoComplete"
@@ -91,11 +94,12 @@
                 android:layout_alignParentLeft="true"
                 android:layout_marginStart="16dp"
                 android:layout_marginLeft="16dp"
-                android:autofillHints="@string/date_form"
+                android:autofillHints="@string/portions_form"
                 android:background="@drawable/ic_field"
                 android:ems="3"
-                android:hint="@string/date_form"
-                android:inputType="date|text"
+                android:hint="@string/portions_form"
+                android:fontFamily="@font/lato_regular"
+                android:inputType="number"
                 android:paddingLeft="16dp"
                 android:paddingTop="8dp"
                 android:paddingRight="16dp"
@@ -112,7 +116,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
-                android:text="@string/date_form"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/portions_form"
                 android:textColor="@color/text_dark"
                 android:textSize="18sp" />
 
@@ -133,6 +138,7 @@
                 android:background="@drawable/ic_field"
                 android:ems="10"
                 android:hint="@string/url_form"
+                android:fontFamily="@font/lato_regular"
                 android:inputType="textUri|text"
                 android:paddingLeft="16dp"
                 android:paddingTop="8dp"
@@ -154,6 +160,7 @@
                 android:layout_marginBottom="8dp"
                 android:layout_toEndOf="@+id/dateTextView"
                 android:layout_toRightOf="@+id/dateTextView"
+                android:fontFamily="@font/lato_regular"
                 android:text="@string/url_form"
                 android:textColor="@color/text_dark"
                 android:textSize="18sp" />
@@ -173,6 +180,7 @@
                 android:layout_marginRight="16dp"
                 android:autofillHints="@string/description_form"
                 android:background="@drawable/ic_field"
+                android:fontFamily="@font/lato_regular"
                 android:ems="255"
                 android:gravity="clip_vertical"
                 android:hint="@string/description_form"
@@ -199,6 +207,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
+                android:fontFamily="@font/lato_regular"
                 android:text="@string/description_form"
                 android:textColor="@color/text_dark"
                 android:textSize="18sp" />
@@ -212,6 +221,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/ic_btn"
+                android:fontFamily="@font/lato_regular"
                 android:gravity="center"
                 android:text="@string/save"
                 android:textColor="@color/white"

@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/gray1"
+        app:cardBackgroundColor="#3E3E3E"
         app:cardCornerRadius="8dp"
         app:cardElevation="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,7 +35,7 @@
                 android:layout_marginRight="120dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/name"
-                android:fontFamily="@font/lato_black_italic"
+                android:fontFamily="@font/lato_regular"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 

@@ -2,31 +2,31 @@
     <!-- Base application theme. -->
     <style name="Theme.MainActivity" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimaryDark">@color/purple</item>
+        <item name="colorPrimaryDark">@color/gray1</item>
         <!-- Secondary brand color. -->
         <item name="colorAccent">@color/orange2</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/purple</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/gray1</item>
         <!-- Customize your theme here. -->
     </style>
 
     <style name="Theme.FormActivity" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimaryDark">@color/purple</item>
+        <item name="colorPrimaryDark">@color/gray1</item>
         <!-- Secondary brand color. -->
         <item name="colorAccent">@color/orange2</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/purple</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/gray1</item>
         <!-- Customize your theme here. -->
     </style>
 
     <style name="Theme.DetailActivity" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimaryDark">@color/purple</item>
+        <item name="colorPrimaryDark">@color/gray1</item>
         <!-- Secondary brand color. -->
         <item name="colorAccent">@color/orange2</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/purple</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/gray1</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>
