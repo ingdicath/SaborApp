@@ -12,13 +12,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido"
+        android:text="Bienvenido!"
+        android:layout_marginBottom="14dp"
+        android:fontFamily="@font/lato_black_italic"
+        android:textSize="30dp"
         style="@style/TextAppearance.MaterialComponents.Caption"/>
 
     <TextView
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="16sp"
         android:text="Email"/>
 
 
