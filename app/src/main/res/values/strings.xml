@@ -4,7 +4,7 @@
     <string name="name">LOREM VII remake</string>
     <string name="date">30 de noviembre de 2021</string>
     <string name="title_activity_main">SaborApp</string>
-    <string name="subtitle_activity_main">2021</string>
+    <string name="subtitle_activity_main">Para editar una receta, manténgala presionada.\nPara borrar una receta, deslícela hacia los lados.</string>
     <string name="title_activity_add">Nueva Receta</string>
     <string name="title_activity_edit">Datos de la receta</string>
     <string name="name_form">Nombre</string>

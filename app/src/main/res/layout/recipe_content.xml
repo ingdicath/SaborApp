@@ -11,12 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        app:cardBackgroundColor="@color/gray1"
         app:cardCornerRadius="8dp"
         app:cardElevation="0dp"
-        app:cardBackgroundColor="#3A3E59"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -37,6 +35,7 @@
                 android:layout_marginRight="120dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/name"
+                android:fontFamily="@font/lato_black_italic"
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 
@@ -49,8 +48,9 @@
                 android:layout_marginEnd="120dp"
                 android:layout_marginRight="120dp"
                 android:layout_marginBottom="32dp"
-                android:textColor="#cbcbcb"
-                android:text="@string/date" />
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/date"
+                android:textColor="#cbcbcb" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
