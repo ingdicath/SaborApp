@@ -99,11 +99,12 @@
                 android:ems="3"
                 android:hint="@string/portions_form"
                 android:fontFamily="@font/lato_regular"
-                android:inputType="number"
+                android:inputType="text"
                 android:paddingLeft="16dp"
                 android:paddingTop="8dp"
                 android:paddingRight="16dp"
-                android:paddingBottom="8dp" />
+                android:paddingBottom="8dp"
+                tools:ignore="TextFields" />
 
             <TextView
                 android:id="@+id/dateTextView"
@@ -117,7 +118,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="8dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="@string/portions_form"
+                android:text="@string/portions_form_tittle"
                 android:textColor="@color/text_dark"
                 android:textSize="18sp" />
 
@@ -208,7 +209,8 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginRight="16dp"
                 android:fontFamily="@font/lato_regular"
-                android:text="@string/description_form"
+                android:text="@string/description_form_tittle"
+                android:layout_marginBottom="8dp"
                 android:textColor="@color/text_dark"
                 android:textSize="18sp" />
 
