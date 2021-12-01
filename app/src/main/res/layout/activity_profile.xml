@@ -29,16 +29,15 @@
 
     <Button
         android:id="@+id/btnLogOut"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="56dp"
         android:text="Cerrar Sesión"
-        android:paddingStart="40dp"
-        android:paddingEnd="40dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:backgroundTint="@color/red1"
-        style="@style/TextAppearance.MaterialComponents.Body1"
-        android:textColor="@color/white"/>
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_btn"
+        android:fontFamily="@font/lato_regular"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
 
 </LinearLayout>
