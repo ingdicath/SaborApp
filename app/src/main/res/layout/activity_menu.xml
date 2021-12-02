@@ -92,7 +92,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="Mi Perfil"
+                    android:text=""
                     android:fontFamily="@font/lato_regular"
                     android:textColor="@color/white" />
 
