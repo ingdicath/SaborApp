@@ -42,7 +42,7 @@
                 android:scaleType="centerCrop"
                 android:scaleX="1"
                 android:scaleY="1"
-                android:src="@drawable/mis_recetas"/>
+                android:src="@drawable/recet1"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -81,7 +81,7 @@
                 android:scaleType="centerCrop"
                 android:scaleX="1"
                 android:scaleY="1"
-                android:src="@drawable/mi_perfil"/>
+                android:src="@drawable/perfil"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
